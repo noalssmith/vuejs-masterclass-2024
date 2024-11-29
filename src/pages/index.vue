@@ -1,9 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+usePageStore().pageData.title = 'Home Page'
+</script>
 
 <template>
   <div>
     <p>Home Page</p>
-    <RouterLink :to="{ name: '/projects/[id]', params: { id: 1 } }">Go to projects</RouterLink>
   </div>
 </template>
 
